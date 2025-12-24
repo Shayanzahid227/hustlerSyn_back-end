@@ -1,0 +1,3952 @@
+{
+	"info": {
+		"_postman_id": "60ed57c1-e5df-4fa3-8aa3-c6cda0d88421",
+		"name": "HustlerSync-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10563282"
+	},
+	"item": [
+		{
+			"name": "Register Hustler",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fullName",
+							"value": "Tanvir",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tanvir.netmow@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "pw123456",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "hustler",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "01738252525",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "English",
+							"type": "text"
+						},
+						{
+							"key": "serviceCategoryId",
+							"value": "691e9872d584f9b0c6c41969",
+							"type": "text"
+						},
+						{
+							"key": "startingPrice",
+							"value": "25",
+							"type": "text"
+						},
+						{
+							"key": "businessName",
+							"value": "Latest Carpenter",
+							"type": "text"
+						},
+						{
+							"key": "businessDesc",
+							"value": "Demo Description",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Cipher/Desktop/testing-picture/avatar-8.jpg"
+						},
+						{
+							"key": "businessImages",
+							"type": "file",
+							"src": [
+								"/C:/Users/Cipher/Desktop/testing-picture/avatar-9.jpg",
+								"/C:/Users/Cipher/Desktop/testing-picture/avatar-10.jpg",
+								"/C:/Users/Cipher/Desktop/testing-picture/multi-user.jpg",
+								"/C:/Users/Cipher/Desktop/testing-picture/user-dummy-img.jpg"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/auth/register-hustler",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register-hustler"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201 - Created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullName",
+									"value": "Tanvir",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "tanvir.netmow@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "pw123456",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "hustler",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01738252525",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "English",
+									"type": "text"
+								},
+								{
+									"key": "serviceCategoryId",
+									"value": "691e9872d584f9b0c6c41969",
+									"type": "text"
+								},
+								{
+									"key": "startingPrice",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "businessName",
+									"value": "Latest Carpenter",
+									"type": "text"
+								},
+								{
+									"key": "businessDesc",
+									"value": "Demo Description",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Cipher/Desktop/testing-picture/avatar-8.jpg"
+								},
+								{
+									"key": "businessImages",
+									"type": "file",
+									"src": [
+										"/C:/Users/Cipher/Desktop/testing-picture/avatar-9.jpg",
+										"/C:/Users/Cipher/Desktop/testing-picture/avatar-10.jpg",
+										"/C:/Users/Cipher/Desktop/testing-picture/multi-user.jpg",
+										"/C:/Users/Cipher/Desktop/testing-picture/user-dummy-img.jpg"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/auth/register-hustler",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register-hustler"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "335"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14f-shpfBn8lYuyPMTFWAVcZQh2Zr04\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Nov 2025 05:08:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Hustler registered successfully\",\n    \"data\": {\n        \"_id\": \"691ea26ab011e9c7882bf3ae\",\n        \"email\": \"tanvir.netmow@gmail.com\",\n        \"role\": \"hustler\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWVhMjZhYjAxMWU5Yzc4ODJiZjNhZSIsImlhdCI6MTc2MzYxNTMzOCwiZXhwIjoxNzY2MjA3MzM4fQ.Sr_wVoCQ1IwjbxCFKDP16WpWHf_TfA1FY_CJszd1AVE\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Register Client",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fullName",
+							"value": "Tanvir",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tanvirahmed1418@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "pw123456",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "client",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "English",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Cipher/Desktop/testing-picture/avatar-1.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/auth/register-client",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register-client"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201 - Created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullName",
+									"value": "Tanvir",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "tanvirahmed1418@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "pw123456",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "client",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "English",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Cipher/Desktop/testing-picture/avatar-1.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/auth/register-client",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register-client"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "335"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14f-T4JwOdbND+3DMOyIksz1lPSRBqU\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Nov 2025 04:45:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Client registered successfully\",\n    \"data\": {\n        \"_id\": \"691e9cee1f74284b594ab248\",\n        \"email\": \"tanvirahmed1418@gmail.com\",\n        \"role\": \"client\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWU5Y2VlMWY3NDI4NGI1OTRhYjI0OCIsImlhdCI6MTc2MzYxMzkzNSwiZXhwIjoxNzY2MjA1OTM1fQ.MDnNrFlMDqNHeuDqY2ftIpbHvvNXyNBLFROMc3dXxcQ\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"tanvirahmed1418@gmail.com\",\r\n    \"password\": \"pw123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/auth/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"tanvir.netmow@gmail.com\",\r\n    \"password\": \"pw123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/auth/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "320"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"140-S6yf+w9byY3gd/1PYeJnaLsaWCE\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Nov 2025 18:17:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Login successful\",\n    \"data\": {\n        \"_id\": \"691ea26ab011e9c7882bf3ae\",\n        \"email\": \"tanvir.netmow@gmail.com\",\n        \"role\": \"hustler\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWVhMjZhYjAxMWU5Yzc4ODJiZjNhZSIsImlhdCI6MTc2NDM1Mzg0NSwiZXhwIjoxNzY2OTQ1ODQ1fQ.4Q4eR1iBdr8bzFIpwnKW4U3dcwv1qzUlxPGzaIgerGw\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Forgot Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"tanvirahmed1418@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/auth/forgot-password",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"forgot-password"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"tanvirahmed1418@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/auth/forgot-password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=96, reset=624"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "72"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"48-iqzowkPV/nOPpunAw7k8oug6RXs\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Nov 2025 19:19:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Password reset link sent to email\",\n    \"data\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\": \"pw123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/auth/reset-password/:token",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"reset-password",
+						":token"
+					],
+					"variable": [
+						{
+							"key": "token",
+							"value": "d042b500cb6efaa189ed2d092170fef375bf4116af57623b9640098bd4afb1ef"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"pw123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/auth/reset-password/:token",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"reset-password",
+								":token"
+							],
+							"variable": [
+								{
+									"key": "token",
+									"value": "d042b500cb6efaa189ed2d092170fef375bf4116af57623b9640098bd4afb1ef"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=95, reset=499"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "64"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"40-homzrLVfz0rdu5QFzUO0xMyMXa0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Nov 2025 19:21:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Password reset successful\",\n    \"data\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWVhMjZhYjAxMWU5Yzc4ODJiZjNhZSIsImlhdCI6MTc2MzYxNTMzOCwiZXhwIjoxNzY2MjA3MzM4fQ.Sr_wVoCQ1IwjbxCFKDP16WpWHf_TfA1FY_CJszd1AVE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/profile",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Hustler Profile",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "390"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"186-sXENlcFJHroVNgkogO1RlJCpyfw\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Nov 2025 05:19:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Profile fetched successfully\",\n    \"data\": {\n        \"_id\": \"691ea26ab011e9c7882bf3ae\",\n        \"fullName\": \"Tanvir\",\n        \"email\": \"tanvir.netmow@gmail.com\",\n        \"phone\": \"01738252525\",\n        \"role\": \"hustler\",\n        \"isVerified\": false,\n        \"language\": \"English\",\n        \"services\": [\n            \"691ea26ab011e9c7882bf3b0\"\n        ],\n        \"activeSubscriptionId\": null,\n        \"subscriptionHistory\": [],\n        \"isDeleted\": false,\n        \"createdAt\": \"2025-11-20T05:08:58.516Z\",\n        \"__v\": 1\n    }\n}"
+				},
+				{
+					"name": "200 - Client Profile",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=98, reset=865"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "363"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"16b-Zazqf0JvDn1Hco1jzYxAeGokrhM\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Nov 2025 05:20:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Profile fetched successfully\",\n    \"data\": {\n        \"_id\": \"691e9cee1f74284b594ab248\",\n        \"fullName\": \"Tanvir\",\n        \"email\": \"tanvirahmed1418@gmail.com\",\n        \"role\": \"client\",\n        \"profileImage\": null,\n        \"isVerified\": false,\n        \"language\": \"English\",\n        \"services\": [],\n        \"activeSubscriptionId\": null,\n        \"subscriptionHistory\": [],\n        \"isDeleted\": false,\n        \"createdAt\": \"2025-11-20T04:45:34.907Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Electrical\",\r\n    \"description\": \"Demo Sevice Name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/hustler-services",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hustler-services"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Electrical\",\r\n    \"description\": \"Demo Sevice Name\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/hustler-services",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"hustler-services"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=97, reset=766"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "215"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d7-jKEQ4uSCVw2xCIv7ddnWesnNbTw\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Nov 2025 04:37:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Service added successfully\",\n    \"data\": {\n        \"name\": \"Electrical\",\n        \"description\": \"Demo Sevice Name\",\n        \"isDeleted\": false,\n        \"_id\": \"691e9b0565648ad0f43d7840\",\n        \"createdAt\": \"2025-11-20T04:37:25.934Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Services",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/hustler-services",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hustler-services"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/hustler-services",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"hustler-services"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "823"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"337-75Nb5GdJYD6j/WE8zin8clVLOLo\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Nov 2025 04:38:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Services fetched successfully\",\n    \"data\": [\n        {\n            \"_id\": \"691e9872d584f9b0c6c41969\",\n            \"name\": \"Plumbing\",\n            \"description\": \"Demo Sevice Name\",\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-20T04:26:26.161Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"691e989a46c6a843439ad5a4\",\n            \"name\": \"Plumbing\",\n            \"description\": \"Demo Sevice Name\",\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-20T04:27:06.746Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"691e98a546c6a843439ad5a6\",\n            \"name\": \"Design\",\n            \"description\": \"Demo Sevice Name\",\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-20T04:27:17.272Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"691e9afc65648ad0f43d783d\",\n            \"name\": \"Carpentry\",\n            \"description\": \"Demo Sevice Name\",\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-20T04:37:16.536Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"691e9b0565648ad0f43d7840\",\n            \"name\": \"Electrical\",\n            \"description\": \"Demo Sevice Name\",\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-20T04:37:25.934Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Service By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/hustler-services/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hustler-services",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "691e9872d584f9b0c6c41969"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/hustler-services/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"hustler-services",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "691e9872d584f9b0c6c41969"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=98, reset=816"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "215"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d7-Blzw6VM7H0V7i87NA3w4HSx+ZCc\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Nov 2025 04:40:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Service fetched successfully\",\n    \"data\": {\n        \"_id\": \"691e9872d584f9b0c6c41969\",\n        \"name\": \"Plumbing\",\n        \"description\": \"Demo Sevice Name\",\n        \"isDeleted\": false,\n        \"createdAt\": \"2025-11-20T04:26:26.161Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Subscription Plans",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Annual Plan\",\r\n    \"billingType\": \"annual\",\r\n    \"price\": 150,\r\n    \"offerPrice\": 120,\r\n    \"currency\": \"USD\",\r\n    \"offerText\": \"10% off!\",\r\n    \"planFor\": \"hustler\",\r\n    \"features\": [\r\n        {\r\n            \"feature\": \"Limited Projects\",\r\n            \"enabled\": true\r\n        },\r\n        {\r\n            \"feature\": \"Priority Support\",\r\n            \"enabled\": true\r\n        },\r\n        {\r\n            \"feature\": \"Advanced Analytics\",\r\n            \"enabled\": false\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/subscription-plans",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"subscription-plans"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success (Hustler Annual)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Annual Plan\",\r\n    \"billingType\": \"annual\",\r\n    \"price\": 150,\r\n    \"offerPrice\": 120,\r\n    \"currency\": \"USD\",\r\n    \"offerText\": \"10% off!\",\r\n    \"planFor\": \"hustler\",\r\n    \"features\": [\r\n        {\r\n            \"feature\": \"Limited Projects\",\r\n            \"enabled\": true\r\n        },\r\n        {\r\n            \"feature\": \"Priority Support\",\r\n            \"enabled\": true\r\n        },\r\n        {\r\n            \"feature\": \"Advanced Analytics\",\r\n            \"enabled\": false\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/subscription-plans",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"subscription-plans"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "560"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"230-BB0G2Zq8JyE97xAmmr3oALcXqsg\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Nov 2025 11:25:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Subscription plan created successfully\",\n    \"data\": {\n        \"name\": \"Annual Plan\",\n        \"billingType\": \"annual\",\n        \"price\": 150,\n        \"offerPrice\": 120,\n        \"currency\": \"USD\",\n        \"offerText\": \"10% off!\",\n        \"planFor\": \"hustler\",\n        \"features\": [\n            {\n                \"feature\": \"Limited Projects\",\n                \"enabled\": true,\n                \"_id\": \"692986bf41c615a610189b4d\"\n            },\n            {\n                \"feature\": \"Priority Support\",\n                \"enabled\": true,\n                \"_id\": \"692986bf41c615a610189b4e\"\n            },\n            {\n                \"feature\": \"Advanced Analytics\",\n                \"enabled\": false,\n                \"_id\": \"692986bf41c615a610189b4f\"\n            }\n        ],\n        \"isDeleted\": false,\n        \"_id\": \"692986bf41c615a610189b4c\",\n        \"createdAt\": \"2025-11-28T11:25:51.303Z\",\n        \"__v\": 0\n    }\n}"
+				},
+				{
+					"name": "200 - Success (Client Annual)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Annual Subscription\",\r\n    \"billingType\": \"annual\",\r\n    \"price\": 120,\r\n    \"offerPrice\": 99.99,\r\n    \"currency\": \"USD\",\r\n    \"offerText\": \"\",\r\n    \"planFor\": \"client\",\r\n    \"features\": [\r\n        {\r\n            \"feature\": \"Limited Projects\",\r\n            \"enabled\": true\r\n        },\r\n        {\r\n            \"feature\": \"Priority Support\",\r\n            \"enabled\": true\r\n        },\r\n        {\r\n            \"feature\": \"Advanced Analytics\",\r\n            \"enabled\": true\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/subscription-plans",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"subscription-plans"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=97, reset=760"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "560"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"230-KvPQAyM3Hu813/AcsNoz9kRd4C8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Nov 2025 11:28:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Subscription plan created successfully\",\n    \"data\": {\n        \"name\": \"Annual Subscription\",\n        \"billingType\": \"annual\",\n        \"price\": 120,\n        \"offerPrice\": 99.99,\n        \"currency\": \"USD\",\n        \"offerText\": \"\",\n        \"planFor\": \"client\",\n        \"features\": [\n            {\n                \"feature\": \"Limited Projects\",\n                \"enabled\": true,\n                \"_id\": \"6929874b41c615a610189b57\"\n            },\n            {\n                \"feature\": \"Priority Support\",\n                \"enabled\": true,\n                \"_id\": \"6929874b41c615a610189b58\"\n            },\n            {\n                \"feature\": \"Advanced Analytics\",\n                \"enabled\": true,\n                \"_id\": \"6929874b41c615a610189b59\"\n            }\n        ],\n        \"isDeleted\": false,\n        \"_id\": \"6929874b41c615a610189b56\",\n        \"createdAt\": \"2025-11-28T11:28:11.360Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Hustler Subscription Plans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/subscription-plans/hustler",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"subscription-plans",
+						"hustler"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/subscription-plans/hustler",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"subscription-plans",
+								"hustler"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1041"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"411-dP+WIBeBpHt5hkjiDoKH1eIkyF4\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Nov 2025 11:54:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Subscription plans fetched successfully\",\n    \"data\": [\n        {\n            \"_id\": \"6929864944cc6d449bcc8b78\",\n            \"name\": \"Monthly Plan\",\n            \"billingType\": \"monthly\",\n            \"price\": 20,\n            \"offerPrice\": 20,\n            \"currency\": \"USD\",\n            \"offerText\": \"\",\n            \"planFor\": \"hustler\",\n            \"features\": [\n                {\n                    \"feature\": \"Limited Projects\",\n                    \"enabled\": true,\n                    \"_id\": \"6929864944cc6d449bcc8b79\"\n                },\n                {\n                    \"feature\": \"Priority Support\",\n                    \"enabled\": true,\n                    \"_id\": \"6929864944cc6d449bcc8b7a\"\n                },\n                {\n                    \"feature\": \"Advanced Analytics\",\n                    \"enabled\": false,\n                    \"_id\": \"6929864944cc6d449bcc8b7b\"\n                }\n            ],\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-28T11:23:53.264Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"692986bf41c615a610189b4c\",\n            \"name\": \"Annual Plan\",\n            \"billingType\": \"annual\",\n            \"price\": 150,\n            \"offerPrice\": 120,\n            \"currency\": \"USD\",\n            \"offerText\": \"10% off!\",\n            \"planFor\": \"hustler\",\n            \"features\": [\n                {\n                    \"feature\": \"Limited Projects\",\n                    \"enabled\": true,\n                    \"_id\": \"692986bf41c615a610189b4d\"\n                },\n                {\n                    \"feature\": \"Priority Support\",\n                    \"enabled\": true,\n                    \"_id\": \"692986bf41c615a610189b4e\"\n                },\n                {\n                    \"feature\": \"Advanced Analytics\",\n                    \"enabled\": false,\n                    \"_id\": \"692986bf41c615a610189b4f\"\n                }\n            ],\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-28T11:25:51.303Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Client Subscription Plans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/subscription-plans/client",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"subscription-plans",
+						"client"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/subscription-plans/client",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"subscription-plans",
+								"client"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=98, reset=840"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "563"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"233-Pfvxsyb3GaT+l8SxDFh1u1cQy30\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Nov 2025 11:55:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Subscription plans fetched successfully\",\n    \"data\": [\n        {\n            \"_id\": \"6929874b41c615a610189b56\",\n            \"name\": \"Annual Subscription\",\n            \"billingType\": \"annual\",\n            \"price\": 120,\n            \"offerPrice\": 99.99,\n            \"currency\": \"USD\",\n            \"offerText\": \"\",\n            \"planFor\": \"client\",\n            \"features\": [\n                {\n                    \"feature\": \"Limited Projects\",\n                    \"enabled\": true,\n                    \"_id\": \"6929874b41c615a610189b57\"\n                },\n                {\n                    \"feature\": \"Priority Support\",\n                    \"enabled\": true,\n                    \"_id\": \"6929874b41c615a610189b58\"\n                },\n                {\n                    \"feature\": \"Advanced Analytics\",\n                    \"enabled\": true,\n                    \"_id\": \"6929874b41c615a610189b59\"\n                }\n            ],\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-28T11:28:11.360Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Subscription Plan By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/subscription-plans/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"subscription-plans",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "691eae08c2e93eba19422c5b"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/subscription-plans/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"subscription-plans",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "691eae08c2e93eba19422c5b"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=96, reset=523"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "542"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21e-WLUCYyBIzXzK/YAk9aTJwYEwGNI\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Nov 2025 06:04:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Subscription plan fetched successfully\",\n    \"data\": {\n        \"_id\": \"691eae08c2e93eba19422c5b\",\n        \"name\": \"Annual Plan\",\n        \"billingType\": \"annual\",\n        \"price\": 150,\n        \"offerPrice\": 120,\n        \"currency\": \"USD\",\n        \"offerText\": \"20% off!\",\n        \"features\": [\n            {\n                \"feature\": \"Unlimited Projects\",\n                \"enabled\": true,\n                \"_id\": \"691eae08c2e93eba19422c5c\"\n            },\n            {\n                \"feature\": \"Priority Support\",\n                \"enabled\": true,\n                \"_id\": \"691eae08c2e93eba19422c5d\"\n            },\n            {\n                \"feature\": \"Advanced Analytics\",\n                \"enabled\": false,\n                \"_id\": \"691eae08c2e93eba19422c5e\"\n            }\n        ],\n        \"isDeleted\": false,\n        \"createdAt\": \"2025-11-20T05:58:32.974Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Subscription Plan Payment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWVhMjZhYjAxMWU5Yzc4ODJiZjNhZSIsImlhdCI6MTc2MzYxNTMzOCwiZXhwIjoxNzY2MjA3MzM4fQ.Sr_wVoCQ1IwjbxCFKDP16WpWHf_TfA1FY_CJszd1AVE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"planId\": \"6929864944cc6d449bcc8b78\",\r\n    \"userId\": \"691ea26ab011e9c7882bf3ae\",\r\n    \"userRole\": \"hustler\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/payments/subscription-plan/create-session",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"payments",
+						"subscription-plan",
+						"create-session"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Hustler Payment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"planId\": \"6929864944cc6d449bcc8b78\",\r\n    \"userId\": \"691ea26ab011e9c7882bf3ae\",\r\n    \"userRole\": \"hustler\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/payments/subscription-plan/create-session",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"payments",
+								"subscription-plan",
+								"create-session"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "416"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a0-8rmkVsN/DzD3QVg1js7rtJxBLyM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Nov 2025 16:04:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Payment session created successfully\",\n    \"data\": {\n        \"url\": \"https://checkout.stripe.com/c/pay/cs_test_a1yXF2jFuhbDV0Zt1ESDRPDn74JDe0y8KrNhJiyy7JwE88tqM64F8eJBkl#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWnRnaUNLXGtiR25AYW9AXzQzb319alJWSCcpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl\"\n    }\n}"
+				},
+				{
+					"name": "200 - Client Payment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"planId\": \"6929874b41c615a610189b56\",\r\n    \"userId\": \"691e9cee1f74284b594ab248\",\r\n    \"userRole\": \"client\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/payments/subscription-plan/create-session",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"payments",
+								"subscription-plan",
+								"create-session"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=98, reset=780"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "416"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a0-gobSxPQMvlSZVtRTdoPG+J21aTU\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Nov 2025 16:06:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Payment session created successfully\",\n    \"data\": {\n        \"url\": \"https://checkout.stripe.com/c/pay/cs_test_a1ALLqq8BXua6NXmjA26k3S74357pPKMDucUZxe8EU29t410xdBF3pvSPx#fidnandhYHdWcXxpYCc%2FJ2FgY2RwaXEnKSdkdWxOYHwnPyd1blpxYHZxWnRnaUNLXGtiR25AYW9AXzQzb319alJWSCcpJ2N3amhWYHdzYHcnP3F3cGApJ2dkZm5id2pwa2FGamlqdyc%2FJyZjY2NjY2MnKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Hustlers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWVhMjZhYjAxMWU5Yzc4ODJiZjNhZSIsImlhdCI6MTc2MzYxNTMzOCwiZXhwIjoxNzY2MjA3MzM4fQ.Sr_wVoCQ1IwjbxCFKDP16WpWHf_TfA1FY_CJszd1AVE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/hustlers?page=1&limit=10",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hustlers"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/hustlers?page=1&limit=10",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"hustlers"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "993"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3e1-y4uV6KF1K9/vu2y2eLPjBzCIJig\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Nov 2025 16:11:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Hustlers fetched successfully\",\n    \"data\": [\n        {\n            \"_id\": \"691ea26ab011e9c7882bf3ae\",\n            \"fullName\": \"Tanvir\",\n            \"email\": \"tanvir.netmow@gmail.com\",\n            \"phone\": \"01738252525\",\n            \"role\": \"hustler\",\n            \"isVerified\": false,\n            \"language\": \"English\",\n            \"services\": [\n                {\n                    \"_id\": \"691ea26ab011e9c7882bf3b0\",\n                    \"userId\": \"691ea26ab011e9c7882bf3ae\",\n                    \"name\": \"Latest Carpenter\",\n                    \"description\": \"Demo Description\",\n                    \"images\": [\n                        \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/usjvxync3kvdbjisru6i.jpg\",\n                        \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/v7x6trd5kqd7vs56nzgy.jpg\",\n                        \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/bk5pvpjmx4xl79r2iu7m.jpg\",\n                        \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/dq11jqizkkvm30mwzxm6.jpg\"\n                    ],\n                    \"serviceCategoryId\": \"691e9872d584f9b0c6c41969\",\n                    \"startingPrice\": 25,\n                    \"isDeleted\": false,\n                    \"createdAt\": \"2025-11-20T05:08:58.688Z\",\n                    \"__v\": 0\n                }\n            ],\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-20T05:08:58.516Z\",\n            \"__v\": 4\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Single Hustler",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWVhMjZhYjAxMWU5Yzc4ODJiZjNhZSIsImlhdCI6MTc2MzYxNTMzOCwiZXhwIjoxNzY2MjA3MzM4fQ.Sr_wVoCQ1IwjbxCFKDP16WpWHf_TfA1FY_CJszd1AVE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/hustlers/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hustlers",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "691ea26ab011e9c7882bf3ae"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/hustlers/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"hustlers",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "691ea26ab011e9c7882bf3ae"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "990"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3de-c1N4jQ1XVCkprmlIfW+Wn9/yvzA\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Nov 2025 16:12:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Hustler fetched successfully\",\n    \"data\": {\n        \"_id\": \"691ea26ab011e9c7882bf3ae\",\n        \"fullName\": \"Tanvir\",\n        \"email\": \"tanvir.netmow@gmail.com\",\n        \"phone\": \"01738252525\",\n        \"role\": \"hustler\",\n        \"isVerified\": false,\n        \"language\": \"English\",\n        \"services\": [\n            {\n                \"_id\": \"691ea26ab011e9c7882bf3b0\",\n                \"userId\": \"691ea26ab011e9c7882bf3ae\",\n                \"name\": \"Latest Carpenter\",\n                \"description\": \"Demo Description\",\n                \"images\": [\n                    \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/usjvxync3kvdbjisru6i.jpg\",\n                    \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/v7x6trd5kqd7vs56nzgy.jpg\",\n                    \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/bk5pvpjmx4xl79r2iu7m.jpg\",\n                    \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/dq11jqizkkvm30mwzxm6.jpg\"\n                ],\n                \"serviceCategoryId\": \"691e9872d584f9b0c6c41969\",\n                \"startingPrice\": 25,\n                \"isDeleted\": false,\n                \"createdAt\": \"2025-11-20T05:08:58.688Z\",\n                \"__v\": 0\n            }\n        ],\n        \"isDeleted\": false,\n        \"createdAt\": \"2025-11-20T05:08:58.516Z\",\n        \"__v\": 4\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Hustler Service For Hustler",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWVhMjZhYjAxMWU5Yzc4ODJiZjNhZSIsImlhdCI6MTc2NDM1Mzg0NSwiZXhwIjoxNzY2OTQ1ODQ1fQ.4Q4eR1iBdr8bzFIpwnKW4U3dcwv1qzUlxPGzaIgerGw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Web Design",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Modern web design",
+							"type": "text"
+						},
+						{
+							"key": "startingPrice",
+							"value": "35",
+							"type": "text"
+						},
+						{
+							"key": "serviceCategoryId",
+							"value": "691e98a546c6a843439ad5a6",
+							"type": "text"
+						},
+						{
+							"key": "serviceImages",
+							"type": "file",
+							"src": [
+								"/C:/Users/Cipher/Desktop/testing-picture/multi-user.jpg",
+								"/C:/Users/Cipher/Desktop/testing-picture/user-dummy-img.jpg"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/hustlers/hustler-services",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hustlers",
+						"hustler-services"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Web Design",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Modern web design",
+									"type": "text"
+								},
+								{
+									"key": "startingPrice",
+									"value": "35",
+									"type": "text"
+								},
+								{
+									"key": "serviceCategoryId",
+									"value": "691e98a546c6a843439ad5a6",
+									"type": "text"
+								},
+								{
+									"key": "serviceImages",
+									"type": "file",
+									"src": [
+										"/C:/Users/Cipher/Desktop/testing-picture/multi-user.jpg",
+										"/C:/Users/Cipher/Desktop/testing-picture/user-dummy-img.jpg"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/hustlers/hustler-services",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"hustlers",
+								"hustler-services"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "544"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"220-BAaJtt5nUcv+NGqeiG3wZbShxPA\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Nov 2025 18:21:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Service added to hustler successfully\",\n    \"data\": {\n        \"userId\": \"691ea26ab011e9c7882bf3ae\",\n        \"name\": \"Web Design\",\n        \"description\": \"Modern web design\",\n        \"images\": [\n            \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1764354086/hustler-sync/ujjtoputf0thzvpjbrab.jpg\",\n            \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1764354087/hustler-sync/cj9f6dqv3utlsv2mnzfc.jpg\"\n        ],\n        \"serviceCategoryId\": \"691e98a546c6a843439ad5a6\",\n        \"startingPrice\": 35,\n        \"isDeleted\": false,\n        \"_id\": \"6929e827c5f6df886a3dca83\",\n        \"createdAt\": \"2025-11-28T18:21:27.877Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Single Hustler Service For Hustler",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWVhMjZhYjAxMWU5Yzc4ODJiZjNhZSIsImlhdCI6MTc2NDM1Mzg0NSwiZXhwIjoxNzY2OTQ1ODQ1fQ.4Q4eR1iBdr8bzFIpwnKW4U3dcwv1qzUlxPGzaIgerGw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/hustlers/hustler-services/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hustlers",
+						"hustler-services",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6929e827c5f6df886a3dca83"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/hustlers/hustler-services/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"hustlers",
+								"hustler-services",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6929e827c5f6df886a3dca83"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1039"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"40f-VKKFvPmulOlFlLB185adCcD2g+M\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Nov 2025 18:49:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Hustler service fetched successfully\",\n    \"data\": {\n        \"_id\": \"6929e827c5f6df886a3dca83\",\n        \"userId\": {\n            \"_id\": \"691ea26ab011e9c7882bf3ae\",\n            \"fullName\": \"Tanvir\",\n            \"email\": \"tanvir.netmow@gmail.com\",\n            \"phone\": \"01738252525\",\n            \"role\": \"hustler\",\n            \"isVerified\": false,\n            \"language\": \"English\",\n            \"services\": [\n                \"691ea26ab011e9c7882bf3b0\",\n                \"6929e827c5f6df886a3dca83\"\n            ],\n            \"subscriptionHistory\": [\n                \"6929b6bd3058aae04c08ec12\"\n            ],\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-20T05:08:58.516Z\",\n            \"__v\": 5,\n            \"activeSubscriptionId\": \"6929b6bd3058aae04c08ec12\"\n        },\n        \"name\": \"Web Design\",\n        \"description\": \"Modern web design\",\n        \"images\": [\n            \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1764354086/hustler-sync/ujjtoputf0thzvpjbrab.jpg\",\n            \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1764354087/hustler-sync/cj9f6dqv3utlsv2mnzfc.jpg\"\n        ],\n        \"serviceCategoryId\": {\n            \"_id\": \"691e98a546c6a843439ad5a6\",\n            \"name\": \"Design\",\n            \"description\": \"Demo Sevice Name\",\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-20T04:27:17.272Z\",\n            \"__v\": 0\n        },\n        \"startingPrice\": 35,\n        \"isDeleted\": false,\n        \"createdAt\": \"2025-11-28T18:21:27.877Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Service Providers By Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWU5Y2VlMWY3NDI4NGI1OTRhYjI0OCIsImlhdCI6MTc2NDQ5MTcxMSwiZXhwIjoxNzY3MDgzNzExfQ.QtQU7t8PgcuZ3dlU0OTnvlxNkpvOK8OURE3nyrlu8Hg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/service-provider-by-category?serviceCatId=691e9872d584f9b0c6c41969",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"service-provider-by-category"
+					],
+					"query": [
+						{
+							"key": "serviceCatId",
+							"value": "691e9872d584f9b0c6c41969"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - All Categories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/service-provider-by-category",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"service-provider-by-category"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2019"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7e3-uw8VogiWVFQZpDLtXbV0hqY//D8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Nov 2025 08:37:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Service providers fetched successfully\",\n    \"data\": [\n        {\n            \"_id\": \"691ea26ab011e9c7882bf3b0\",\n            \"userId\": {\n                \"_id\": \"691ea26ab011e9c7882bf3ae\",\n                \"fullName\": \"Tanvir\",\n                \"email\": \"tanvir.netmow@gmail.com\",\n                \"phone\": \"01738252525\",\n                \"role\": \"hustler\",\n                \"isVerified\": false,\n                \"language\": \"English\",\n                \"services\": [\n                    \"691ea26ab011e9c7882bf3b0\",\n                    \"6929e827c5f6df886a3dca83\"\n                ],\n                \"isDeleted\": false,\n                \"createdAt\": \"2025-11-20T05:08:58.516Z\",\n                \"__v\": 5\n            },\n            \"name\": \"Latest Carpenter\",\n            \"description\": \"Demo Description\",\n            \"images\": [\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/usjvxync3kvdbjisru6i.jpg\",\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/v7x6trd5kqd7vs56nzgy.jpg\",\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/bk5pvpjmx4xl79r2iu7m.jpg\",\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/dq11jqizkkvm30mwzxm6.jpg\"\n            ],\n            \"serviceCategoryId\": {\n                \"_id\": \"691e9872d584f9b0c6c41969\",\n                \"name\": \"Plumbing\",\n                \"description\": \"Demo Sevice Name\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2025-11-20T04:26:26.161Z\",\n                \"__v\": 0\n            },\n            \"startingPrice\": 25,\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-20T05:08:58.688Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6929e827c5f6df886a3dca83\",\n            \"userId\": {\n                \"_id\": \"691ea26ab011e9c7882bf3ae\",\n                \"fullName\": \"Tanvir\",\n                \"email\": \"tanvir.netmow@gmail.com\",\n                \"phone\": \"01738252525\",\n                \"role\": \"hustler\",\n                \"isVerified\": false,\n                \"language\": \"English\",\n                \"services\": [\n                    \"691ea26ab011e9c7882bf3b0\",\n                    \"6929e827c5f6df886a3dca83\"\n                ],\n                \"isDeleted\": false,\n                \"createdAt\": \"2025-11-20T05:08:58.516Z\",\n                \"__v\": 5\n            },\n            \"name\": \"Web Design\",\n            \"description\": \"Modern web design\",\n            \"images\": [\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1764354086/hustler-sync/ujjtoputf0thzvpjbrab.jpg\",\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1764354087/hustler-sync/cj9f6dqv3utlsv2mnzfc.jpg\"\n            ],\n            \"serviceCategoryId\": {\n                \"_id\": \"691e98a546c6a843439ad5a6\",\n                \"name\": \"Design\",\n                \"description\": \"Demo Sevice Name\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2025-11-20T04:27:17.272Z\",\n                \"__v\": 0\n            },\n            \"startingPrice\": 35,\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-28T18:21:27.877Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				},
+				{
+					"name": "200 - Search By Param",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/service-provider-by-category?serviceCatId=691e9872d584f9b0c6c41969",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"service-provider-by-category"
+							],
+							"query": [
+								{
+									"key": "serviceCatId",
+									"value": "691e9872d584f9b0c6c41969"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=97, reset=764"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1153"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"481-86aKz0GJHP2BpHXvHiuWH3H7Ng8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Nov 2025 08:39:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Service providers fetched successfully\",\n    \"data\": [\n        {\n            \"_id\": \"691ea26ab011e9c7882bf3b0\",\n            \"userId\": {\n                \"_id\": \"691ea26ab011e9c7882bf3ae\",\n                \"fullName\": \"Tanvir\",\n                \"email\": \"tanvir.netmow@gmail.com\",\n                \"phone\": \"01738252525\",\n                \"role\": \"hustler\",\n                \"isVerified\": false,\n                \"language\": \"English\",\n                \"services\": [\n                    \"691ea26ab011e9c7882bf3b0\",\n                    \"6929e827c5f6df886a3dca83\"\n                ],\n                \"isDeleted\": false,\n                \"createdAt\": \"2025-11-20T05:08:58.516Z\",\n                \"__v\": 5\n            },\n            \"name\": \"Latest Carpenter\",\n            \"description\": \"Demo Description\",\n            \"images\": [\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/usjvxync3kvdbjisru6i.jpg\",\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/v7x6trd5kqd7vs56nzgy.jpg\",\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/bk5pvpjmx4xl79r2iu7m.jpg\",\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/dq11jqizkkvm30mwzxm6.jpg\"\n            ],\n            \"serviceCategoryId\": {\n                \"_id\": \"691e9872d584f9b0c6c41969\",\n                \"name\": \"Plumbing\",\n                \"description\": \"Demo Sevice Name\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2025-11-20T04:26:26.161Z\",\n                \"__v\": 0\n            },\n            \"startingPrice\": 25,\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-20T05:08:58.688Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Hustlers Search By Service Name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWU5Y2VlMWY3NDI4NGI1OTRhYjI0OCIsImlhdCI6MTc2NDQ5MTcxMSwiZXhwIjoxNzY3MDgzNzExfQ.QtQU7t8PgcuZ3dlU0OTnvlxNkpvOK8OURE3nyrlu8Hg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/hustlers-search-by-service-name?serviceName=Carpenter",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hustlers-search-by-service-name"
+					],
+					"query": [
+						{
+							"key": "serviceName",
+							"value": "Carpenter"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/hustlers-search-by-service-name?serviceName=Carpenter",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"hustlers-search-by-service-name"
+							],
+							"query": [
+								{
+									"key": "serviceName",
+									"value": "Carpenter"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1151"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"47f-CTQX35LleGz5ovm741jQ+59dJIc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Nov 2025 08:51:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Hustler services fetched successfully\",\n    \"data\": [\n        {\n            \"_id\": \"691ea26ab011e9c7882bf3b0\",\n            \"userId\": {\n                \"_id\": \"691ea26ab011e9c7882bf3ae\",\n                \"fullName\": \"Tuhin\",\n                \"email\": \"tanvir.netmow@gmail.com\",\n                \"phone\": \"01738252525\",\n                \"role\": \"hustler\",\n                \"isVerified\": false,\n                \"language\": \"English\",\n                \"services\": [\n                    \"691ea26ab011e9c7882bf3b0\",\n                    \"6929e827c5f6df886a3dca83\"\n                ],\n                \"isDeleted\": false,\n                \"createdAt\": \"2025-11-20T05:08:58.516Z\",\n                \"__v\": 5\n            },\n            \"name\": \"Latest Carpenter\",\n            \"description\": \"Demo Description\",\n            \"images\": [\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/usjvxync3kvdbjisru6i.jpg\",\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/v7x6trd5kqd7vs56nzgy.jpg\",\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/bk5pvpjmx4xl79r2iu7m.jpg\",\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1763615338/hustler-sync/dq11jqizkkvm30mwzxm6.jpg\"\n            ],\n            \"serviceCategoryId\": {\n                \"_id\": \"691e9872d584f9b0c6c41969\",\n                \"name\": \"Plumbing\",\n                \"description\": \"Demo Sevice Name\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2025-11-20T04:26:26.161Z\",\n                \"__v\": 0\n            },\n            \"startingPrice\": 25,\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-20T05:08:58.688Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Job Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWU5Y2VlMWY3NDI4NGI1OTRhYjI0OCIsImlhdCI6MTc2NDQzOTM0MiwiZXhwIjoxNzY3MDMxMzQyfQ.bYO7OHAg6IR8DX_rGGam4wmBo91u0LPbHwXDObCCGts",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Demo Job",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Demo Desc Demo Desc",
+							"type": "text"
+						},
+						{
+							"key": "budget",
+							"value": "25",
+							"type": "text"
+						},
+						{
+							"key": "serviceCategoryId",
+							"value": "691e98a546c6a843439ad5a6",
+							"type": "text"
+						},
+						{
+							"key": "languages",
+							"value": "[\"Hindi\", \"English\"]",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Newyork",
+							"type": "text"
+						},
+						{
+							"key": "postImages",
+							"type": "file",
+							"src": [
+								"/C:/Users/Cipher/Desktop/testing-picture/multi-user.jpg",
+								"/C:/Users/Cipher/Desktop/testing-picture/user-dummy-img.jpg"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/hustler-finding-posts",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hustler-finding-posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Demo Job",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Demo Desc Demo Desc",
+									"type": "text"
+								},
+								{
+									"key": "budget",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "serviceCategoryId",
+									"value": "691e98a546c6a843439ad5a6",
+									"type": "text"
+								},
+								{
+									"key": "languages",
+									"value": "[\"Hindi\", \"English\"]",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "Newyork",
+									"type": "text"
+								},
+								{
+									"key": "postImages",
+									"type": "file",
+									"src": [
+										"/C:/Users/Cipher/Desktop/testing-picture/multi-user.jpg",
+										"/C:/Users/Cipher/Desktop/testing-picture/user-dummy-img.jpg"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/hustler-finding-posts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"hustler-finding-posts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "653"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28d-wURA8w2gR1RJy6uJXse1NihzWf8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Nov 2025 18:58:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Hustler finding post created successfully\",\n    \"data\": {\n        \"title\": \"Demo Job\",\n        \"description\": \"Demo Desc Demo Desc\",\n        \"budget\": 25,\n        \"serviceCategoryId\": \"691e98a546c6a843439ad5a6\",\n        \"location\": \"Newyork\",\n        \"languages\": [\n            \"Hindi\",\n            \"English\"\n        ],\n        \"images\": [\n            \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1764442738/hustler-sync/krizzjfap4i28zusttqg.jpg\",\n            \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1764442738/hustler-sync/njyrqkranmoqxpagwlrf.jpg\"\n        ],\n        \"createdBy\": \"691e9cee1f74284b594ab248\",\n        \"status\": \"open\",\n        \"isDeleted\": false,\n        \"_id\": \"692b4272aab04a6930ab5c49\",\n        \"createdAt\": \"2025-11-29T18:58:58.455Z\",\n        \"updatedAt\": \"2025-11-29T18:58:58.455Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "All Job Posts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWVhMjZhYjAxMWU5Yzc4ODJiZjNhZSIsImlhdCI6MTc2NDQ0Mjk5MSwiZXhwIjoxNzY3MDM0OTkxfQ.CdLwC4LJKhvT6a9-MW2vksTKtncaFPA28LgYNdxtaSQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/hustler-finding-posts",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hustler-finding-posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/hustler-finding-posts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"hustler-finding-posts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=96, reset=854"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "997"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3e5-RAOH1TmHBr56AAMtX+iYCsVyifI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Nov 2025 19:03:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Hustler finding posts fetched successfully\",\n    \"data\": [\n        {\n            \"_id\": \"692b4272aab04a6930ab5c49\",\n            \"title\": \"Demo Job\",\n            \"description\": \"Demo Desc Demo Desc\",\n            \"budget\": 25,\n            \"serviceCategoryId\": {\n                \"_id\": \"691e98a546c6a843439ad5a6\",\n                \"name\": \"Design\",\n                \"description\": \"Demo Sevice Name\",\n                \"isDeleted\": false,\n                \"createdAt\": \"2025-11-20T04:27:17.272Z\",\n                \"__v\": 0\n            },\n            \"location\": \"Newyork\",\n            \"languages\": [\n                \"Hindi\",\n                \"English\"\n            ],\n            \"images\": [\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1764442738/hustler-sync/krizzjfap4i28zusttqg.jpg\",\n                \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1764442738/hustler-sync/njyrqkranmoqxpagwlrf.jpg\"\n            ],\n            \"createdBy\": {\n                \"_id\": \"691e9cee1f74284b594ab248\",\n                \"fullName\": \"Tanvir\",\n                \"email\": \"tanvirahmed1418@gmail.com\",\n                \"role\": \"client\",\n                \"profileImage\": null,\n                \"isVerified\": false,\n                \"language\": \"English\",\n                \"services\": [],\n                \"isDeleted\": false,\n                \"createdAt\": \"2025-11-20T04:45:34.907Z\",\n                \"__v\": 0\n            },\n            \"status\": \"open\",\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-29T18:58:58.455Z\",\n            \"updatedAt\": \"2025-11-29T18:58:58.455Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Single Job Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWVhMjZhYjAxMWU5Yzc4ODJiZjNhZSIsImlhdCI6MTc2NDQ0Mjk5MSwiZXhwIjoxNzY3MDM0OTkxfQ.CdLwC4LJKhvT6a9-MW2vksTKtncaFPA28LgYNdxtaSQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/hustler-finding-posts/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"hustler-finding-posts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "692b4272aab04a6930ab5c49"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/hustler-finding-posts/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"hustler-finding-posts",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "692b4272aab04a6930ab5c49"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=98, reset=884"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "994"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3e2-GT/OWRpYbORiiq6fzG3XzEQNP+k\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Nov 2025 19:07:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Hustler finding post fetched successfully\",\n    \"data\": {\n        \"_id\": \"692b4272aab04a6930ab5c49\",\n        \"title\": \"Demo Job\",\n        \"description\": \"Demo Desc Demo Desc\",\n        \"budget\": 25,\n        \"serviceCategoryId\": {\n            \"_id\": \"691e98a546c6a843439ad5a6\",\n            \"name\": \"Design\",\n            \"description\": \"Demo Sevice Name\",\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-20T04:27:17.272Z\",\n            \"__v\": 0\n        },\n        \"location\": \"Newyork\",\n        \"languages\": [\n            \"Hindi\",\n            \"English\"\n        ],\n        \"images\": [\n            \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1764442738/hustler-sync/krizzjfap4i28zusttqg.jpg\",\n            \"https://res.cloudinary.com/dxhbkvt39/image/upload/v1764442738/hustler-sync/njyrqkranmoqxpagwlrf.jpg\"\n        ],\n        \"createdBy\": {\n            \"_id\": \"691e9cee1f74284b594ab248\",\n            \"fullName\": \"Tanvir\",\n            \"email\": \"tanvirahmed1418@gmail.com\",\n            \"role\": \"client\",\n            \"profileImage\": null,\n            \"isVerified\": false,\n            \"language\": \"English\",\n            \"services\": [],\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-20T04:45:34.907Z\",\n            \"__v\": 0\n        },\n        \"status\": \"open\",\n        \"isDeleted\": false,\n        \"createdAt\": \"2025-11-29T18:58:58.455Z\",\n        \"updatedAt\": \"2025-11-29T18:58:58.455Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Current Subscription Plan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWVhMjZhYjAxMWU5Yzc4ODJiZjNhZSIsImlhdCI6MTc2NDQ0Mjk5MSwiZXhwIjoxNzY3MDM0OTkxfQ.CdLwC4LJKhvT6a9-MW2vksTKtncaFPA28LgYNdxtaSQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/current-subscription-plan",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"current-subscription-plan"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/current-subscription-plan",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"current-subscription-plan"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=99, reset=900"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "890"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"37a-d4GB7pwBrBDBu/X0T7X0TLw+w2o\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Nov 2025 08:30:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Active subscription plan fetched successfully\",\n    \"data\": {\n        \"_id\": \"6929b6bd3058aae04c08ec12\",\n        \"userId\": {\n            \"_id\": \"691ea26ab011e9c7882bf3ae\",\n            \"email\": \"tanvir.netmow@gmail.com\"\n        },\n        \"planId\": {\n            \"_id\": \"6929864944cc6d449bcc8b78\",\n            \"name\": \"Monthly Plan\",\n            \"billingType\": \"monthly\",\n            \"price\": 20,\n            \"offerPrice\": 20,\n            \"currency\": \"USD\",\n            \"offerText\": \"\",\n            \"planFor\": \"hustler\",\n            \"features\": [\n                {\n                    \"feature\": \"Limited Projects\",\n                    \"enabled\": true,\n                    \"_id\": \"6929864944cc6d449bcc8b79\"\n                },\n                {\n                    \"feature\": \"Priority Support\",\n                    \"enabled\": true,\n                    \"_id\": \"6929864944cc6d449bcc8b7a\"\n                },\n                {\n                    \"feature\": \"Advanced Analytics\",\n                    \"enabled\": false,\n                    \"_id\": \"6929864944cc6d449bcc8b7b\"\n                }\n            ],\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-28T11:23:53.264Z\",\n            \"__v\": 0\n        },\n        \"status\": \"active\",\n        \"startedAt\": \"2025-11-28T14:50:37.132Z\",\n        \"expiresAt\": \"2025-12-28T14:50:37.132Z\",\n        \"stripePaymentId\": \"pi_3SYT0F2x6R10KRrh1XdXd1iz\",\n        \"isDeleted\": false,\n        \"createdAt\": \"2025-11-28T14:50:37.146Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Billing History",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWVhMjZhYjAxMWU5Yzc4ODJiZjNhZSIsImlhdCI6MTc2NDQ0Mjk5MSwiZXhwIjoxNzY3MDM0OTkxfQ.CdLwC4LJKhvT6a9-MW2vksTKtncaFPA28LgYNdxtaSQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/billing-history",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"billing-history"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/billing-history",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"billing-history"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=900"
+						},
+						{
+							"key": "RateLimit",
+							"value": "limit=100, remaining=98, reset=806"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "915"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"393-7C0kmbESE8xvzLn75/qn3nq4C4A\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Nov 2025 08:31:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Billing history fetched successfully\",\n    \"data\": [\n        {\n            \"_id\": \"6929b6bd3058aae04c08ec15\",\n            \"userId\": \"691ea26ab011e9c7882bf3ae\",\n            \"subscriptionId\": \"6929b6bd3058aae04c08ec12\",\n            \"planId\": {\n                \"_id\": \"6929864944cc6d449bcc8b78\",\n                \"name\": \"Monthly Plan\",\n                \"billingType\": \"monthly\",\n                \"price\": 20,\n                \"offerPrice\": 20,\n                \"currency\": \"USD\",\n                \"offerText\": \"\",\n                \"planFor\": \"hustler\",\n                \"features\": [\n                    {\n                        \"feature\": \"Limited Projects\",\n                        \"enabled\": true,\n                        \"_id\": \"6929864944cc6d449bcc8b79\"\n                    },\n                    {\n                        \"feature\": \"Priority Support\",\n                        \"enabled\": true,\n                        \"_id\": \"6929864944cc6d449bcc8b7a\"\n                    },\n                    {\n                        \"feature\": \"Advanced Analytics\",\n                        \"enabled\": false,\n                        \"_id\": \"6929864944cc6d449bcc8b7b\"\n                    }\n                ],\n                \"isDeleted\": false,\n                \"createdAt\": \"2025-11-28T11:23:53.264Z\",\n                \"__v\": 0\n            },\n            \"amountPaid\": 20,\n            \"currency\": \"usd\",\n            \"stripeInvoiceId\": \"cs_test_a1BGwJ5a1fYGC55xh5eD5u8oSUdwVM5V4m4GxzTuONNJHOxKVEi33oREDg\",\n            \"stripePaymentIntentId\": \"pi_3SYT0F2x6R10KRrh1XdXd1iz\",\n            \"isDeleted\": false,\n            \"createdAt\": \"2025-11-28T14:50:37.332Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
